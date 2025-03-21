@@ -1,0 +1,16 @@
+/* 
+Theme Name: Koro Filipino Block Theme
+Author: Jaymie Tan, Nina Saberon, Leanne Redinger
+Description: Capstone
+Version: 1.0
+Requires at least: 6.0
+Tested up to: 6.0
+Requires PHP: 8.0
+*/
+
+.wp-block-query ul.wp-block-post-template li:nth-of-type(2) {
+    /* Add your styles here */
+    background-color: #4d1b1b; /* Example: Change the background color */
+    border: 2px solid #ccc;    /* Example: Add a border */
+    padding: 10px;             /* Example: Add some padding */
+} 

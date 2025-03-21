@@ -1,0 +1,57 @@
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained","contentSize":"80%"}} -->
+<main class="wp-block-group"><!-- wp:template-part {"slug":"header-inner","theme":"globetrotting-block"} /-->
+
+    <!-- wp:cover {"url":"https://jtan31.dmitstudent.ca/dmit-2032/assignment3/wp-content/uploads/2024/06/banner-image.jpg","id":50,"dimRatio":50,"customOverlayColor":"#1d220c","isUserOverlayColor":true,"layout":{"type":"constrained"}} -->
+    <div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#1d220c"></span><img class="wp-block-cover__image-background wp-image-50" alt="" src="https://jtan31.dmitstudent.ca/dmit-2032/assignment3/wp-content/uploads/2024/06/banner-image.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"left","placeholder":"Write title…","style":{"elements":{"link":{"color":{"text":"var:preset|color|color-light-blue"}}}},"textColor":"color-light-blue","fontSize":"h3-size"} -->
+    <p class="has-text-align-left has-color-light-blue-color has-text-color has-link-color has-h-3-size-font-size">Archive</p>
+    <!-- /wp:paragraph --></div></div>
+    <!-- /wp:cover -->
+    
+    <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+    <div class="wp-block-group"><!-- wp:heading {"fontSize":"h3-size"} -->
+    <h2 class="wp-block-heading has-h-3-size-font-size">TagS:</h2>
+    <!-- /wp:heading -->
+    
+    <!-- wp:post-terms {"term":"post_tag","style":{"elements":{"link":{"color":{"text":"var:preset|color|color-maroon"}}}},"textColor":"color-maroon","fontSize":"h3-size","fontFamily":"heading-font-domine"} /--></div>
+    <!-- /wp:group -->
+    
+    <!-- wp:columns -->
+    <div class="wp-block-columns"><!-- wp:column {"width":"85%"} -->
+    <div class="wp-block-column" style="flex-basis:85%"><!-- wp:query {"queryId":48,"query":{"perPage":4,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"exclude","inherit":false,"taxQuery":{"category":[3]}},"metadata":{"categories":["posts"],"patternName":"core/query-grid-posts","name":"Grid"}} -->
+    <div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":2}} -->
+    <!-- wp:columns {"backgroundColor":"color-light-gray"} -->
+    <div class="wp-block-columns has-color-light-gray-background-color has-background"><!-- wp:column -->
+    <div class="wp-block-column"><!-- wp:post-featured-image {"isLink":true,"linkTarget":"_blank"} /-->
+    
+    <!-- wp:post-title {"isLink":true,"style":{"typography":{"textTransform":"capitalize","textDecoration":"none"},"elements":{"link":{"color":{"text":"var:preset|color|color-maroon"}}}},"textColor":"color-maroon","fontSize":"h4-size","fontFamily":"heading-font-domine"} /-->
+    
+    <!-- wp:post-excerpt {"style":{"typography":{"lineHeight":1.6}},"fontSize":"body-size"} /-->
+    
+    <!-- wp:post-date {"style":{"typography":{"fontStyle":"italic","fontWeight":"400"}},"fontSize":"body-size"} /-->
+    
+    <!-- wp:read-more {"content":"\u003cstrong\u003eLearn More\u003c/strong\u003e \u003e\u003e","linkTarget":"_blank","metadata":{"name":"Learn More"},"style":{"elements":{"link":{"color":{"text":"var:preset|color|color-body-text"}}}},"textColor":"color-body-text","fontSize":"body-size"} /--></div>
+    <!-- /wp:column --></div>
+    <!-- /wp:columns -->
+    <!-- /wp:post-template -->
+    
+    <!-- wp:columns -->
+    <div class="wp-block-columns"><!-- wp:column -->
+    <div class="wp-block-column"><!-- wp:query-pagination {"paginationArrow":"chevron","style":{"elements":{"link":{"color":{"text":"var:preset|color|color-dark-green"}}}},"textColor":"color-dark-green","fontSize":"body-size","layout":{"type":"flex","justifyContent":"right"}} -->
+    <!-- wp:query-pagination-previous /-->
+    
+    <!-- wp:query-pagination-numbers /-->
+    
+    <!-- wp:query-pagination-next /-->
+    <!-- /wp:query-pagination --></div>
+    <!-- /wp:column --></div>
+    <!-- /wp:columns --></div>
+    <!-- /wp:query --></div>
+    <!-- /wp:column -->
+    
+    <!-- wp:column {"width":"15%"} -->
+    <div class="wp-block-column" style="flex-basis:15%"><!-- wp:template-part {"slug":"sidebar","theme":"globetrotting-block","area":"uncategorized"} /--></div>
+    <!-- /wp:column --></div>
+    <!-- /wp:columns -->
+    
+    <!-- wp:template-part {"slug":"footer","theme":"globetrotting-block","area":"footer"} /--></main>
+    <!-- /wp:group -->

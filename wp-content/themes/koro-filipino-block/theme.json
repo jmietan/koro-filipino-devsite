@@ -1,0 +1,222 @@
+{ 
+    "version": 3,
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "settings": {
+        "layout": {
+            "contentSize": "1000px",    
+            "wideSize": "1300px"   
+        },
+        "spacing": {
+            "blockGap": true,
+            "margin": true,
+            "padding": true
+        },
+        "color": {
+            "defaultDuotone": false,
+            "defaultGradients": false,
+            "defaultPalette": false,
+            "customDuotone": false,
+            "customGradient": false,
+            "custom": true,
+            "palette": [
+                {
+                    "name": "Color Black",
+                    "color": "#141414",
+                    "slug": "color-black"
+                },
+                {
+                    "name": "Color Dark Gold",
+                    "color": "#6D551C",
+                    "slug": "color-dark-gold"
+                },
+                {
+                    "name": "Color Gold",
+                    "color": "#C19C4D",
+                    "slug": "color-gold"
+                },
+
+                {
+                    "name": "Color Light Gray",
+                    "color": "#F3F4F6",
+                    "slug": "color-light-gray"
+                },
+                {
+                    "name": "Color Body Text",
+                    "color": "#111827",
+                    "slug": "color-body-text"
+                }
+
+            ]
+        }, 
+        "typography": {
+            "fontFamilies": [
+                {
+                    "fontFace": [
+                        {
+                            "fontFamily": "Cormorant Garamond",
+                            "fontWeight": "400",
+                            "fontStretch": "regular",
+                            "fontStyle": "regular",
+                            "src": ["file:./fonts/CormorantGaramond-Regular.woff2"]
+                        }
+                    ],
+                    "fontFamily": "\"Cormorant Garamond\", serif",
+                    "name": "Heading Font Cormorant Garamond",
+                    "slug": "heading-font-cormorant-garamond"
+                },
+                {
+                    "fontFace": [
+
+                        {
+                            "fontFamily": "Cormorant Garamond",
+                            "fontWeight": "300",
+                            "fontStretch": "light italic",
+                            "fontStyle": "italic",
+                            "src": ["file:./fonts/CormorantGaramond-Italic.woff2"]
+                        }
+                    ],
+                    "fontFamily": "\"Cormorant Garamond\", serif",
+                    "name": "Heading Font Cormorant Garamond Italic",
+                    "slug": "heading-font-cormorant-garamond-italic"
+                },
+                {
+                    "fontFace": [
+                        {
+                          "fontFamily": "Poppins",
+                          "fontWeight": "400",
+                          "fontStretch": "regular",
+                          "fontStyle": "regular",
+                          "src": ["file:./fonts/poppins-regular-webfont.woff2"]
+                        }
+                    ],
+                    "fontFamily": "\"Poppins\", sans-serif",
+                    "name": "Body Font Poppins",
+                    "slug": "body-font-poppins"
+
+                },
+                {
+                    "fontFamily": "Arial, Calibri, Tahoma, sans-serif",
+                    "name": "Body Font",
+                    "slug": "body-font"
+                }
+            ],
+            "fontSizes": [
+                {
+                    "name": "Heading Level 1",
+                    "size": "2.9375rem",
+                    "slug": "h1-size"
+                }, 
+                {
+                    "name": "Heading Level 2",
+                    "size": "2.5rem",
+                    "slug": "h2-size"
+                },
+                {
+                    "name": "Heading Level 3",
+                    "size": "1.375rem",
+                    "slug": "h3-size"
+                },
+                {
+                    "name": "Heading Level 4",
+                    "size": "1.25rem",
+                    "slug": "h4-size"
+                },
+                {
+                    "name": "Body Text",
+                    "size": "1rem",
+                    "slug": "body-size"
+                }
+            ],
+            "customFontSize": false,
+             "lineHeight": "2"
+        },
+        "border": {
+            "custom": true,
+            "customRadius": true,
+            "radius": {
+                "units": "px",
+                "small": "4px",
+                "medium": "8px",
+                "large": "16px"
+            },
+            "width": {
+                "units": "px",
+                "small": "1px",
+                "medium": "2px",
+                "large": "3px"
+            },
+            "style": {
+                "solid": true,
+                "dashed": true,
+                "dotted": true
+            },
+            "color": true
+        }
+    },
+    "styles": {
+        "color": {
+            "text": "var(--wp--preset--color--body-text)"
+        },
+        "typography": {
+            "fontFamily": "var(--wp--preset--font-family--body-font)"
+        },
+        "elements": {
+            "heading":{
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--heading-font)"
+                },
+                "color": {
+                    "text" : "var(--wp--preset--color--dark--gray)"
+                }
+            }, 
+            "h1":{
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--h-1-size)"
+                }
+            }, 
+            "h2":{
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--h-2-size)"
+                }
+            },
+            "h3":{
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--h-3-size)"
+                }
+            },
+            "h4":{
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--h-4-size)"
+                }
+            },
+            "a": {   
+                "css": "text-decoration: none !important;"  
+            }
+           
+        }
+    },
+    "templateParts": [
+		{
+			"area": "header",
+			"name": "header",
+			"title": "Header"
+		},
+        {
+			"area": "header",
+			"name": "header-inner",
+			"title": "Header Inner"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "Footer"
+		},
+        {
+            "area": "widgets",
+            "name": "widget-area",
+            "title": "Widget Area"
+        }
+
+
+	]
+}
